@@ -60,17 +60,9 @@ public class Logic {
         return rst;
     }
 
+
+
     public boolean isWin() {
-        int[][] board = new int[size][size];
-        int row = 0;
-        boolean rsl = false;
-        for (int cell = 0; cell < board.length; cell++) {
-            if (board[row][cell] != 1) {
-
-
-                break;
-            }
-        }
         return Win.check(convert());
     }
 
@@ -86,6 +78,8 @@ public class Logic {
         }
         return table;
     }
+
+
 
     @Override
     public String toString() {
